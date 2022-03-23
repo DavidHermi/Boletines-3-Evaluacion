@@ -7,38 +7,45 @@ public class MetodosInterfaz {
 
     JFrame marco;
     JPanel panel;
-    JLabel etiqueta;
-    JTextField liñatexto, liñatexto2;
+    JTextField liñatexto1,liñatexto2;
+    JTextArea area ;
+    JLabel etiqueta1,etiqueta2;
     JButton boton1, boton2;
-
-
-
-
 
     public void crearcompoñentes() {
         //instanciamos
         marco = new JFrame();
         panel = new JPanel();
-        etiqueta = new JLabel("Etiqueta");
-        liñatexto = new JTextField("Hola");
-        liñatexto2 = new JTextField("Adios");
-        boton1 = new JButton("Boton1");
-        boton2 = new JButton("Boton2");
-        //damoslle caracteristicas
+        liñatexto1 = new JTextField();
+        liñatexto2 = new JTextField();
+        area = new JTextArea("Area de texto");
+        etiqueta1 = new JLabel("Nome");
+        etiqueta2 = new JLabel("Password");
+        boton1 = new JButton("PREMER");
+        boton2 = new JButton("LIMPAR");
+        //Caracteristicas
         panel.setLayout(null);
         marco.setSize(650, 650);
         panel.setSize(600, 600);
-        marco.setBackground(Color.RED);
-        etiqueta.setBounds(300,300,75,50);
-        liñatexto.setBounds(600,300,200,75 );
-        boton1.setText("Boton1");
-        boton1.setBounds(300,600,100,100);
-        boton2.setToolTipText("limpa o texto");
-        boton2.setBounds(600,600,100,100);
+        marco.setBackground(Color.white);
+        etiqueta1.setToolTipText("Nome");
+        etiqueta1.setBounds(200,250,100,25);
+        etiqueta2.setToolTipText("Password");
+        etiqueta2.setBounds(200,350,100,25);
+        area.setToolTipText("Area de texto");
+        area.setBounds(350,450,200,100);
+        liñatexto1.setBounds(400,250,100,25);
+        liñatexto2.setBounds(400,350,100,25);
+        boton1.setToolTipText("PREMER");
+        boton1.setBounds(300,600,100,25);
+        boton2.setToolTipText("LIMPAR");
+        boton2.setBounds(600,600,100,25);
 
-
-        panel.add(etiqueta);
-        panel.add(liñatexto);
+        panel.add(liñatexto1);
+        panel.add(liñatexto2);
+        panel.add(area);
+        panel.add(etiqueta1);
+        panel.add(etiqueta2);
         panel.add(boton1);
         panel.add(boton2);
         marco.add(panel);
