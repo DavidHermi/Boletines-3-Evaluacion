@@ -2,8 +2,10 @@ package com.Boletin26;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class MetodosInterfaz {
+public class MetodosInterfaz implements ActionListener {
 
     JFrame marco;
     JPanel panel;
@@ -12,7 +14,7 @@ public class MetodosInterfaz {
     JLabel etiqueta1,etiqueta2;
     JButton boton1, boton2;
 
-    public void crearcompoñentes() {
+    public void crearcompoñentes () {
         //instanciamos
         marco = new JFrame();
         panel = new JPanel();
@@ -49,6 +51,7 @@ public class MetodosInterfaz {
         panel.add(boton1);
         panel.add(boton2);
         marco.add(panel);
+        boton1.addActionListener((ActionListener) this);
 
         marco.setLocationRelativeTo(marco); //pon no medio
         marco.setBounds(100,50,600,400);
@@ -58,4 +61,8 @@ public class MetodosInterfaz {
     }
 
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+    }
 }
