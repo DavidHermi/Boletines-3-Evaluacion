@@ -3,6 +3,8 @@ package com.Boletin27;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	 metodosInterfaz obxMetodos = new metodosInterfaz();
+
+        obxMetodos.crearcompoñentes();
     }
 }
