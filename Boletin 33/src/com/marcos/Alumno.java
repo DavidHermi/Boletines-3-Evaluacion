@@ -1,4 +1,4 @@
-package com.marcos;
+package com.david;
 
 public class Alumno implements Comparable{
 
