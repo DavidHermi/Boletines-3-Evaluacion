@@ -1,6 +1,6 @@
 package subclases;
 
-import com.marcos.Barcos;
+import com.david.Barcos;
 
 import javax.swing.*;
 
